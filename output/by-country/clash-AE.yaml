@@ -26,18 +26,16 @@ proxies:
   udp: true
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   type: vless
-  server: 38.47.96.220
-  port: 11424
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  server: 31.58.181.88
+  port: 8443
+  uuid: 7dc78e93-9c9f-4a38-823b-13df709a1d16
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
-  network: ws
-  ws-opts:
-    path: Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
