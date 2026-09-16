@@ -5,30 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  type: vless
-  server: 104.16.60.10
+  type: ss
+  server: 212.192.15.231
+  port: 8388
+  cipher: aes-256-gcm
+  password: Z9TvqsEkWr7P7GXe
+  udp: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  type: vmess
+  server: 47.242.79.198
   port: 443
-  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: hk1.69lover.my
+  servername: ejOMsxPtP19APyGL.v.3dns.vip
   network: ws
   ws-opts:
-    path: /api/v2/e2fe4e52a165854d/stream
+    path: /ws-vmess
     headers:
-      Host: hk1.69lover.my
+      Host: ejOMsxPtP19APyGL.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
 rules:
 - MATCH,PROXIES
