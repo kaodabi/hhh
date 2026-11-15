@@ -9,22 +9,22 @@ proxies:
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 185.193.29.123
+  server: 185.178.208.167
   port: 443
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  uuid: 4eebdec5-08eb-4772-a0e6-35fec4c91cb0
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: notls.lukongtou.eu.org
+  servername: uwugirl.dev
   network: ws
   ws-opts:
-    path: Telegram-WangCai2🇨🇳
+    path: /player/collect/9c8514f9552d/
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: speakpro.lol
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: ss
   server: 185.22.153.117
